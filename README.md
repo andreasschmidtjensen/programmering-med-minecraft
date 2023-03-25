@@ -53,10 +53,11 @@ Når du har fulgt guiden, vil du have installeret:
 4. Åbn installationsfilen og følg guiden (benyt standardindstillinger)
 
 ### 5. Installation af Spigot
-1. Spigot ligger klar til brug i mappen **Spigot** i denne zip-fil.
-2. Åbn **Spigot** mappen.
-3. Åbn **start_spigot.bat**
-4. Serveren startes nu for første gang, hvilket kan tage lidt tid, fordi der skal genereres en verden.
+1. Hent BuildTools.jar: https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar
+2. Gem i **Spigot/**
+3. Kør `java -jar BuildTools.jar --rev 1.19.4`
+4. Kopier filerne i **spigot-plugins** ind i **Spigot/plugins
+5. Start serveren: `java -Xms512M -Xmx1G -jar spigot-1.19.4.jar -o true`
 
 
 ## Del 2, Tjek om det hele virker
